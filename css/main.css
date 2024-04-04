@@ -307,6 +307,7 @@ section .work_flow .flow:hover {
   color: black;
   font-size: 1.2rem;
   font-weight: 600;
+  text-align: center;
 }
 .tech .wrapper .tech_icon a:hover {
   transform: scale(1.0125) translateY(-15px);
@@ -601,7 +602,7 @@ footer .copywrite {
     display: block;
   }
   header .wrapper nav ul {
-    padding-left: 8em;
+    padding-left: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
