@@ -333,7 +333,6 @@ section .work_flow .flow:hover {
 }
 
 .container {
-  margin-top: 20em;
   width: 100%;
   padding: 35px 10%;
   padding-right: calc(10% - 30px);
