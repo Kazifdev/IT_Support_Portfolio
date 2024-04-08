@@ -42,11 +42,12 @@ body::-webkit-scrollbar {
 
 
 header {
-    position: fixed;
-        width: 100%;
-        z-index: 1000; 
+   
 
     .wrapper {
+        position: fixed;
+        width: 100%;
+        z-index: 1000; 
         background-color: var(--header-color) ;
         padding: 1em 2.8em;
         border-radius: 5em;
@@ -506,126 +507,124 @@ section {
     
     
     }
+}
+
+.testimonials {
     
-    
-    
-    .testimonials {
-    
-        .wrapper {
-            h2 {
-                font-size: 2.7rem;
-                text-decoration: underline;
+    .wrapper {
+        h2 {
+            font-size: 2.7rem;
+            text-decoration: underline;
+            text-align: center;
+            margin-bottom: 3em;
+        }
+        .testimonial-container {
+            margin-top: 20em;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            gap: 2rem;
+            box-shadow: 3px 3px 5px 10px rgba(246, 246, 246, 0.457);
+            color: #333;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 50px 80px;
+            min-height: 430px;
+            position: relative;
+        
+            .stars {
+                font-size: 14px;
+              }
+              
+              .testimonial {
+                display: flex;
+                align-items: center;
                 text-align: center;
-                margin-bottom: 3em;
-            }
-            .testimonial-container {
-                margin-top: 20em;
-                width: 100%;
+                font-size: 1.6rem;
+                font-weight: 500;
+                height: 100%;
+                line-height: 28px;
+                margin: 0;
+              }
+              
+              .user {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: end;
-                gap: 2rem;
-                box-shadow: 3px 3px 5px 10px rgba(246, 246, 246, 0.457);
-                color: #333;
-                border-radius: 15px;
-                margin: 20px auto;
-                padding: 50px 80px;
-                min-height: 430px;
-                position: relative;
-            
-                .stars {
-                    font-size: 14px;
-                  }
-                  
-                  .testimonial {
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    font-size: 1.6rem;
-                    font-weight: 500;
-                    height: 100%;
-                    line-height: 28px;
-                    margin: 0;
-                  }
-                  
-                  .user {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10px;
-                  }
-                  
-                  .user .user-image {
-                    border-radius: 50%;
-                    height: 50px;
-                    width: 50px;
-                    object-fit: cover;
-                  }
-                  
-                  .user .user-details {
-                    text-align: center;
-                  }
-                  
-                  .user .username {
-                    margin: 0;
-                    font-size: 14px;
-                  }
-                  
-                  .user .role {
-                    margin: 0;
-                    font-size: 12px;
-                  }
-                  
-                  .progress-dots {
-                    display: flex;
-                    gap: 5px;
-                  }
-                  
-                  .progress-dot {
-                    width: 5px;
-                    height: 5px;
-                    background-color: #eee;
-                    border-radius: 50%;
-                  }
-                  
-                  .progress-dot.active {
-                    background-color: #555;
-                  }
-                  
-                  .btn {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 30px;
-                    height: 30px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid #eee;
-                    font-size: 10px;
-                    cursor: pointer;
-                    transition: 0.1s ease;
-                  }
-                  
-                  .btn:hover {
-                    background-color: #eee;
-                  }
-                  
-                  #btn-prev {
-                    left: 25px;
-                  }
-                  
-                  #btn-next {
-                    right: 25px;
-                  }
-                  
-            
+                justify-content: center;
+                gap: 10px;
               }
-        }
+              
+              .user .user-image {
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                object-fit: cover;
+              }
+              
+              .user .user-details {
+                text-align: center;
+              }
+              
+              .user .username {
+                margin: 0;
+                font-size: 14px;
+              }
+              
+              .user .role {
+                margin: 0;
+                font-size: 12px;
+              }
+              
+              .progress-dots {
+                display: flex;
+                gap: 5px;
+              }
+              
+              .progress-dot {
+                width: 5px;
+                height: 5px;
+                background-color: #eee;
+                border-radius: 50%;
+              }
+              
+              .progress-dot.active {
+                background-color: #555;
+              }
+              
+              .btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #eee;
+                font-size: 10px;
+                cursor: pointer;
+                transition: 0.1s ease;
+              }
+              
+              .btn:hover {
+                background-color: #eee;
+              }
+              
+              #btn-prev {
+                left: 25px;
+              }
+              
+              #btn-next {
+                right: 25px;
+              }
+              
         
+          }
     }
+    
 }
 
 
@@ -984,7 +983,10 @@ footer {
     header {
         margin-left: 2.8em;
         margin-right: 2.8em;
-        width: 95%;
+        .wrapper {
+            width: 96%;
+        }
+        
     }
 
 

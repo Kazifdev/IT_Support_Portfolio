@@ -48,12 +48,10 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid var(--primary-color);
 }
 
-header {
+header .wrapper {
   position: fixed;
   width: 100%;
   z-index: 1000;
-}
-header .wrapper {
   background-color: var(--header-color);
   padding: 1em 2.8em;
   border-radius: 5em;
@@ -407,13 +405,14 @@ section .work_flow .flow:hover {
     margin-top: 30px;
   }
 }
-.container .testimonials .wrapper h2 {
+
+.testimonials .wrapper h2 {
   font-size: 2.7rem;
   text-decoration: underline;
   text-align: center;
   margin-bottom: 3em;
 }
-.container .testimonials .wrapper .testimonial-container {
+.testimonials .wrapper .testimonial-container {
   margin-top: 20em;
   width: 100%;
   display: flex;
@@ -429,10 +428,10 @@ section .work_flow .flow:hover {
   min-height: 430px;
   position: relative;
 }
-.container .testimonials .wrapper .testimonial-container .stars {
+.testimonials .wrapper .testimonial-container .stars {
   font-size: 14px;
 }
-.container .testimonials .wrapper .testimonial-container .testimonial {
+.testimonials .wrapper .testimonial-container .testimonial {
   display: flex;
   align-items: center;
   text-align: center;
@@ -442,45 +441,45 @@ section .work_flow .flow:hover {
   line-height: 28px;
   margin: 0;
 }
-.container .testimonials .wrapper .testimonial-container .user {
+.testimonials .wrapper .testimonial-container .user {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.container .testimonials .wrapper .testimonial-container .user .user-image {
+.testimonials .wrapper .testimonial-container .user .user-image {
   border-radius: 50%;
   height: 50px;
   width: 50px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container .testimonials .wrapper .testimonial-container .user .user-details {
+.testimonials .wrapper .testimonial-container .user .user-details {
   text-align: center;
 }
-.container .testimonials .wrapper .testimonial-container .user .username {
+.testimonials .wrapper .testimonial-container .user .username {
   margin: 0;
   font-size: 14px;
 }
-.container .testimonials .wrapper .testimonial-container .user .role {
+.testimonials .wrapper .testimonial-container .user .role {
   margin: 0;
   font-size: 12px;
 }
-.container .testimonials .wrapper .testimonial-container .progress-dots {
+.testimonials .wrapper .testimonial-container .progress-dots {
   display: flex;
   gap: 5px;
 }
-.container .testimonials .wrapper .testimonial-container .progress-dot {
+.testimonials .wrapper .testimonial-container .progress-dot {
   width: 5px;
   height: 5px;
   background-color: #eee;
   border-radius: 50%;
 }
-.container .testimonials .wrapper .testimonial-container .progress-dot.active {
+.testimonials .wrapper .testimonial-container .progress-dot.active {
   background-color: #555;
 }
-.container .testimonials .wrapper .testimonial-container .btn {
+.testimonials .wrapper .testimonial-container .btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -494,13 +493,13 @@ section .work_flow .flow:hover {
   cursor: pointer;
   transition: 0.1s ease;
 }
-.container .testimonials .wrapper .testimonial-container .btn:hover {
+.testimonials .wrapper .testimonial-container .btn:hover {
   background-color: #eee;
 }
-.container .testimonials .wrapper .testimonial-container #btn-prev {
+.testimonials .wrapper .testimonial-container #btn-prev {
   left: 25px;
 }
-.container .testimonials .wrapper .testimonial-container #btn-next {
+.testimonials .wrapper .testimonial-container #btn-next {
   right: 25px;
 }
 
@@ -727,7 +726,9 @@ footer .copywrite {
   header {
     margin-left: 2.8em;
     margin-right: 2.8em;
-    width: 95%;
+  }
+  header .wrapper {
+    width: 96%;
   }
   main:before {
     content: "";
