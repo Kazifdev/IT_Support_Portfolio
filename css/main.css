@@ -48,9 +48,15 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid var(--primary-color);
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.8em;
+}
 header .wrapper {
   position: fixed;
-  width: 100%;
+  width: 90%;
   z-index: 1000;
   background-color: var(--header-color);
   padding: 1em 2.8em;
