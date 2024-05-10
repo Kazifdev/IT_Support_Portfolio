@@ -86,7 +86,7 @@ header {
 }
 
 .bg {
-    background: url(/img/background.png) no-repeat center center;
+    background: url(/IT_Support_Portfolio/img/background.png) no-repeat center center;
     background-size: cover;
     height: 1200px;
     width: 100%;
@@ -345,7 +345,7 @@ section {
                 }
                 p {
                     margin-top: 2.5em;
-                    line-height: 2.5em;
+                    line-height: 2.1em;
                     font-size: 1.7rem;
 
 
@@ -421,6 +421,26 @@ section {
     }
     
 }
+
+
+#cert {
+    .wrapper {
+        .tech_icon {
+            width: 95%;
+            display: grid;
+            grid-gap: 25px;
+            grid-row-gap: 60px;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(150px , 1fr));
+            img {
+                width: 50%;
+                box-shadow: none;
+
+            }
+        }
+    }
+}
+
 
 .container {
     width: 100%;
